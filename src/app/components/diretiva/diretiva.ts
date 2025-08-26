@@ -15,23 +15,17 @@ export class Diretiva {
 
   mostrarLista = true;
 
-  fontSize = 20;
+  fontSize = 12;
 
   toggleLista() {
     this.mostrarLista = !this.mostrarLista;
   }
 
-  toggleMensagem() {
-    this.alunos.forEach((aluno) => {
-      aluno.ativo = !aluno.ativo;
-    });
-  }
-
   aumentarFonte() {
-    this.fontSize = 26;
+    this.fontSize = this.fontSize + 2;
   }
 
   diminuirFonte() {
-    this.fontSize = 12;
+    this.fontSize = this.fontSize - 2;
   }
 }

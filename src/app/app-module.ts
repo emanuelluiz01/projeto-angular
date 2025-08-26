@@ -9,9 +9,10 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Contador } from './components/contador/contador';
 import { Diretiva } from './components/diretiva/diretiva';
+import { Estoque } from './components/estoque/estoque';
 
 @NgModule({
-  declarations: [App, Contador, Diretiva],
+  declarations: [App, Contador, Diretiva, Estoque],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners(), provideZonelessChangeDetection()],
   bootstrap: [App],
